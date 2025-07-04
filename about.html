@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>ABOUT ME</title>
+        <link rel="stylesheet" href="edit.css" />
+    </head>
+    <body>
+        <div class="conteiner">
+
+    <!-- NAVIGATION BAR -->
+    <div class="navbar-container">
+        <ul class="ul-navbar">
+            <li class="li-navbar">
+                <a href="index.html" class="a-navbar">HOME</a>
+            </li>
+            <li class="li-navbar">
+                <a href="about.html" class="a-navbar">CEWE SAYA</a>
+            </li>
+            <lI class="li-navbar">
+                <a href="contact.html" class="a-navbar">CONTACT ME</a>
+            </lI>
+        </ul>
+    </div>
+    <!-- NAVIGATION BAR SELESAI -->
+
+    <!-- CONTENT 1 -->
+    <div class="container-content">
+    <img src="foto 1.jpg" class="img-content" id="gambarCewe" onclick="tampilkanVideo()" style="width: 300px; cursor: pointer;" />
+    
+    <video id="videoCewe" style="display: none;" width="640" height="360" controls>
+        <source src="video_1.mp4" type="video/mp4">
+        Browser kamu tidak mendukung pemutar video.
+    </video>
+
+    <p>VIDEO CEWE SAYA, BISA DILIHAT</p>
+    </div>
+    <!-- CONTENT 1 END -->
+
+    <!-- FOOTER -->
+    <div class="container-footer">
+        <h1 class="h1-footer">Website ini dibuat sepenuh hati 🥰🥰🥰</h1>
+    </div>
+    <!-- FOOTER END -->
+     </div>
+     <script>
+    function tampilkanVideo() {
+        document.getElementById("gambarCewe").style.display = "none";
+        const video = document.getElementById("videoCewe");
+        video.style.display = "block";
+        video.play();
+    }
+</script>
+    </body>
+</html>
